@@ -8,7 +8,8 @@ Este repositorio contiene el código y resultados para la detección automática
 ## 🖥️ Modelo y Dataset
 
 - Modelo: ViT (Vision Transformer) preentrenado en ImageNet, ajustado para clasificación binaria (tuberculosis / normal).
-- Dataset: 3500 radiografías de tórax con TB y 3500 normales (total 7000 imágenes).
+- Dataset: El conjunto de datos (Dataset) de imágenes de rayos X del tórax para la Tuberculosis fue creado por un equipo de investigadores de la Universidad de Qatar, Doha, Qatar, y la Universidad
+de Dhaka, Bangladesh, junto con sus colaboradores de Malasia en colaboración con médicos de Hamad Medical Corporation y Bangladesh , que consta de 3500 TB y 3500 radiografías normales.
 - Framework: PyTorch + HuggingFace Transformers.
 
 ## 🚦 Resultados
@@ -17,11 +18,7 @@ Este repositorio contiene el código y resultados para la detección automática
 - **Test AUC:** 0.9999
 
 **Matriz de confusión:**
-
-|                | Predicted Normal | Predicted Tuberculosis |
-|----------------|-----------------|-----------------------|
-| Actual Normal  | 1605            | 1                     |
-| Actual Tuberculosis | 16          | 1549                  |
+![Matriz de confusión](MATRIZ_CONFUSION.png)
 
 ## 📊 Visualizaciones
 
